@@ -1,0 +1,17 @@
+@mixin font-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: $head-grey;
+  text-transform: uppercase;
+}
+
+@mixin font ($font-size: 14px, $line-height: 18px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin clear-intervals {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
