@@ -15,14 +15,3 @@
 .footer__social {
   border-bottom: 1px solid $line-grey;
 }
-
-.footer__copyright {
-  padding: 31px 0;
-}
-
-.copyright__link {
-  @include font(16px, 16px);
-
-  text-decoration: none;
-  color: $text-grey;
-}
