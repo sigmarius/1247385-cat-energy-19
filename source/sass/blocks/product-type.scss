@@ -1,0 +1,24 @@
+.product-type {
+  padding: 0 20px;
+}
+
+.product-type__list {
+  @include clear-intervals;
+}
+
+.product-type__item {
+  margin-bottom: 20px;
+  padding: 39px 20px 0 20px;
+  background-color: $bg-grey;
+}
+
+.product-type__title {
+  @include font-header;
+  @include font(24px, 37px);
+}
+
+.product-type__link {
+  padding: 20px 0 22px 0;
+
+  border-top: 1px solid $line-grey;
+}

@@ -1,0 +1,17 @@
+.contacts__wrapper {
+  padding: 30px 20px;
+}
+
+.contacts__title {
+  @include font-header;
+  @include font(16px, 20px);
+}
+
+.contacts__address {
+  @include font(14px, 20px);
+  font-style: normal;
+}
+
+.contacts__map {
+  display: block;
+}

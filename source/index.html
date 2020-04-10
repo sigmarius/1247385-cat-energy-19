@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <a class="header__logo" href="#">
-            <img class="header__logo-image" src="img/header-logo.svg" width="191" height="39" alt="Логотип проекта Кэт энерджи">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип проекта Кэт энерджи">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -29,8 +30,8 @@
         <section class="intro main__intro">
             <h1 class="intro__title">Функциональное питание для котов</h1>
             <p class="intro__slogan">Занялся собой? Займись котом!</p>
-            <img class="intro__image" src="index-cat-energy.png" width="280" height="270" alt="Внешний вид питания для котов Кэт энерджи">
-            <a class="button intro__link" href="form.html">Подобрать программу</a>
+            <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Внешний вид питания для котов Кэт энерджи">
+            <a class="button button--green intro__link" href="form.html">Подобрать программу</a>
         </section>
 
         <section class="product-type">
@@ -39,12 +40,12 @@
                 <li class="product-type__item product-type__item--slim">
                     <h3 class="product-type__title">Похудение</h3>
                     <p class="product-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                    <a class="product-type__link" href="catalog.html">Каталог Slim</a>
+                    <a class="button button--grey product-type__link" href="catalog.html">Каталог Slim</a>
                 </li>
                 <li class="product-type__item product-type__item--pro">
                     <h3 class="product-type__title">Набор массы</h3>
                     <p class="product-type__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                    <a class="product-type__link" href="catalog.html">Каталог pro</a>
+                    <a class="button button--grey product-type__link" href="catalog.html">Каталог pro</a>
                 </li>
             </ul>
         </section>
@@ -59,22 +60,22 @@
             </ul>
         </section>
 
-        <section class="demo">
-            <h2 class="demo__title">Живой пример</h2>
-            <p class="demo__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <dl class="demo-description demo__list">
-                <dt class="demo-description__character">снижение веса</dt>
-                <dd class="demo-desciption__value">5 кг</dd>
+        <section class="live-example">
+            <h2 class="live-example__title">Живой пример</h2>
+            <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <dl class="description live-example__list">
+                <dt class="description__character">снижение веса</dt>
+                <dd class="desciption__value">5 кг</dd>
 
-                <dt class="demo-description__character">затрачено времени</dt>
-                <dd class="demo-desciption__value">60 дней</dd>
+                <dt class="description__character">затрачено времени</dt>
+                <dd class="desciption__value">60 дней</dd>
             </dl>
-            <p class="demo__price">Затраты на питание: 15 000 руб.</p>
-            <img class="demo__image" src="fat-cat.png" width="311" height="232" alt="Кот Борис до употребления корма Cat Energy Slim">
-            <div class="indicator demo__indicator">
-                <span class="indicator__text">Было</span>
+            <p class="live-example__price">Затраты на питание: 15 000 руб.</p>
+            <img class="live-example__image" src="fat-cat.png" width="311" height="232" alt="Кот Борис до употребления корма Cat Energy Slim">
+            <div class="indicator live-example__indicator">
+                <button class="indicator__button indicator__button--before" type="button">Было</button>
                 <span class="indicator__stripe"></span>
-                <span class="indicator__text">Стало</span>
+                <button class="indicator__button indicator__button--after">Стало</button>
             </div>
         </section>
 
@@ -83,13 +84,13 @@
                 <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
                 <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
             </div>
-            <img class="contacts__map" src="contacts-map.jpg" width="320" height="400" alt="Местонахождение офиса компании на карте">
+            <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местонахождение офиса компании на карте">
         </section>
     </main>
 
     <footer class="footer">
         <a class="footer__logo-link" href="index.html">
-            <img class="footer__logo-image" src="footer-logo.svg" width="128" height="24" alt="Логотип проекта Кэт энерджи">
+            <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип проекта Кэт энерджи">
         </a>
         <div class="social footer__social">
             <ul class="social__list">
@@ -106,7 +107,7 @@
         </div>
         <div class="copyright footer__copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-              <img class="copyright__image" src="htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+              <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
             </a>
         </div>
     </footer>
