@@ -1,0 +1,20 @@
+.extra-card__title {
+  @include font-header;
+  @include font(16px, 16px);
+  @include clear-margin(15px);
+
+  color: $extra-grey;
+}
+
+.extra-card__description {
+  @include clear-margin(14px);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-card__link {
+  @include font(16px, 20px);
+  @include clear-margin(17px);
+  text-align: center;
+}

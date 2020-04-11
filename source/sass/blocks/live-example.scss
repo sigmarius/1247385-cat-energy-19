@@ -1,0 +1,33 @@
+.live-example {
+  padding: 33px 20px 0;
+  background-color: $bg-grey;
+}
+
+.live-example__title {
+  @include font-header;
+  @include font(36px, 60px);
+  @include clear-margin(33px);
+
+  text-transform: none;
+}
+
+.live-example__text {
+  @include clear-margin(27px);
+}
+
+.live-example__list {
+  @include clear-margin(22px);
+}
+
+.live-example__price {
+  @include font-header;
+  @include font(14px, 20px);
+  @include clear-margin(44px);
+
+  text-align: center;
+}
+
+.live-example__image {
+  display: block;
+  margin: 0 auto;
+}

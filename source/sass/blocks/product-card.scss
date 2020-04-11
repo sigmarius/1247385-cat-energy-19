@@ -1,9 +1,7 @@
 .product-card__title {
   @include font-header;
   @include font(16px, 20px);
-
-  margin: 0;
-  margin-bottom: 18px;
+  @include clear-margin(18px);
 
   text-transform: uppercase;
 }
@@ -14,7 +12,7 @@
 
 .product-card__link {
   @include font(16px, 20px);
+  @include clear-margin(25px);
 
-  margin-bottom: 25px;
   text-align: center;
 }

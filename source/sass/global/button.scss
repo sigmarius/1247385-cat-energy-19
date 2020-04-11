@@ -1,0 +1,21 @@
+.button {
+  @include font-header();
+  display: block;
+  padding: 14px 0 11px 0;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &--green {
+    @include font(14px, 18px);
+    color: $white;
+    background-color: $bg-green;
+  }
+
+  &--grey {
+    @include font(16px, 16px);
+    color: $head-grey;
+    background-color: $bg-grey;
+    border: none;
+  }
+}

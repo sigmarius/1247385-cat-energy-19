@@ -1,0 +1,20 @@
+.choice-programm {
+  padding: 30px 20px 0;
+}
+
+.choice-programm__title {
+  @include font-header;
+  @include font(36px, 60px);
+  @include clear-margin(35px);
+
+  text-transform: none;
+}
+
+.choice-programm__slogan {
+  @include font-header;
+  @include font(14px, 18px);
+  @include clear-margin(39px);
+
+  padding: 0;
+  padding-right: 50px;
+}

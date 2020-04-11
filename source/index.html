@@ -64,17 +64,21 @@
             <h2 class="live-example__title">Живой пример</h2>
             <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <dl class="description live-example__list">
+              <div class="description__wrapper">
                 <dt class="description__character">снижение веса</dt>
                 <dd class="desciption__value">5 кг</dd>
+              </div>
 
+              <div class="description__wrapper">
                 <dt class="description__character">затрачено времени</dt>
                 <dd class="desciption__value">60 дней</dd>
+              </div>
             </dl>
             <p class="live-example__price">Затраты на питание: 15 000 руб.</p>
-            <img class="live-example__image" src="fat-cat.png" width="311" height="232" alt="Кот Борис до употребления корма Cat Energy Slim">
+            <img class="live-example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Кот Борис до употребления корма Cat Energy Slim">
             <div class="indicator live-example__indicator">
                 <button class="indicator__button indicator__button--before" type="button">Было</button>
-                <span class="indicator__stripe"></span>
+                <input class="indicator__stripe" type="range" id="indicator-value" name="indicator-value" aria-label="Индикатор прогресса">
                 <button class="indicator__button indicator__button--after">Стало</button>
             </div>
         </section>

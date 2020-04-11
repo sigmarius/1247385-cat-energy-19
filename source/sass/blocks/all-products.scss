@@ -13,6 +13,6 @@
 }
 
 .all-products__link {
-  margin-bottom: 25px;
+  @include clear-margin(25px);
   text-align: center;
 }
