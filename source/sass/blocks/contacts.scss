@@ -1,10 +1,16 @@
 .contacts__wrapper {
-  padding: 30px 20px;
+  display: flex;
+  padding: 30px 20px 0;
+
+  &--grey {
+    background-color: $contacts-grey;
+  }
 }
 
 .contacts__title {
   @include font-header;
   @include font(16px, 20px);
+  @include clear-margin(26px);
 }
 
 .contacts__address {
@@ -14,4 +20,5 @@
 
 .contacts__map {
   display: block;
+  width: 100%;
 }

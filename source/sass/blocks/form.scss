@@ -1,0 +1,104 @@
+.form {
+  @include font-header;
+}
+
+.form__fieldset {
+  @include clear-margin(23px);
+
+  position: relative;
+  padding: 0;
+
+  border: none;
+
+  &--radio {
+    margin: 0 -20px;
+    padding: 20px;
+
+    border-top: 1px solid $line-grey;
+    border-bottom: 1px solid $line-grey;
+  }
+}
+
+.form__label {
+  @include font(16px, 18px);
+
+  min-width: 25%;
+  color: $extra-grey;
+}
+
+.form__input {
+  @include clear-margin(14px);
+
+  padding: 15px;
+
+  border: 1px solid $line-grey;
+}
+
+.form__input::placeholder {
+  @include font(16px, 18px);
+  color: $text-grey;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include clear-intervals;
+  @include font(16px, 18px);
+
+  color: $extra-grey;
+}
+
+.form__item {
+  @include clear-margin(13px);
+}
+
+.form__title {
+  @include font(24px, 24px);
+
+  padding: 30px 0;
+
+  font-weight: 400;
+  text-transform: none;
+}
+
+.form__title::after {
+  position: absolute;
+  right: -20px;
+  top: 15px;
+  width: 50px;
+  height: 3px;
+
+  background-color: $bg-green;
+  content: "";
+}
+
+.form__textarea {
+  @include font(16px, 18px);
+
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+
+  color: $text-grey;
+  text-align: left;
+  text-transform: uppercase;
+
+  border: 1px solid $line-grey;
+}
+
+.form_submit {
+  @include font(16px, 20px);
+
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.form__required {
+  @include font(14px, 16px);
+  @include clear-margin(34px);
+
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: $text-grey;
+  text-align: center;
+  text-transform: none;
+}

@@ -12,24 +12,21 @@
 .intro__title {
   @include font-header;
   @include font(36px, 36px);
-
-  margin: 0;
-  margin-bottom: 20px;
+  @include clear-margin(20px);
 
   color: $white;
+  text-transform: none;
 }
 
 .intro__slogan {
   @include font-header;
   @include font(14px, 14px);
-
-  margin: 0;
-  margin-bottom: 29px;
+  @include clear-margin(29px);
 
   color: $white;
 }
 
 .intro__link {
+  @include clear-margin(22px);
   width: 100%;
-  margin-bottom: 22px;
 }

@@ -21,31 +21,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.button {
-  @include font-header();
-  display: block;
-  padding: 14px 0 11px 0;
-
-  text-decoration: none;
-
-  &--green {
-    @include font(14px, 18px);
-    color: $white;
-    background-color: $bg-green;
-  }
-
-  &--grey {
-    @include font(16px, 16px);
-    color: $head-grey;
-    background-color: $bg-grey;
-  }
-}

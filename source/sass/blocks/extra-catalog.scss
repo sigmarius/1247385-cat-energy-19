@@ -1,0 +1,23 @@
+.extra-catalog {
+  padding: 30px 20px 0;
+}
+
+.extra-catalog__title {
+  @include font-header;
+  @include font(24px, 24px);
+  @include clear-margin(0);
+
+  padding-bottom: 30px;
+  text-transform: none;
+  border-bottom: 1px solid $line-grey;
+}
+
+.extra-catalog__list {
+  @include clear-intervals;
+  @include clear-margin(39px);
+}
+
+.extra-catalog__item {
+  padding-top: 14px;
+  border-bottom: 1px solid $line-grey;
+}

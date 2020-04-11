@@ -5,9 +5,7 @@
 .features__title {
   @include font-header;
   @include font(36px, 60px);
-
-  margin: 0;
-  margin-bottom: 35px;
+  @include clear-margin(35px);
 
   text-transform: none;
 }
@@ -17,5 +15,5 @@
 }
 
 .features__item {
-  margin-bottom: 20px;
+  @include clear-margin(20px);
 }

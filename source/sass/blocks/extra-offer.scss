@@ -1,0 +1,31 @@
+.extra-offer {
+  @include clear-margin(35px);
+
+  padding: 190px 60px 43px;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.extra-offer__text {
+  @include font(16px, 20px);
+  @include clear-margin(0);
+
+  position: relative;
+
+  text-align: center;
+  color: $white;
+}
+
+.extra-offer__text::before {
+  position: absolute;
+  left: 50%;
+  bottom: 120px;
+
+  width: 56px;
+  height: 61px;
+
+  content: url("../img/icon-gift.svg");
+  transform: translate(-50%, 0);
+}

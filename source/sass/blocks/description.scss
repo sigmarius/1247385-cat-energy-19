@@ -1,0 +1,25 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.description__character {
+  @include font(12px, 12px);
+  order: 2;
+  text-align: center;
+}
+
+.desciption__value {
+  @include font-header;
+  @include font(24px, 24px);
+  @include clear-margin(7px);
+  order: 1;
+  text-align: center;
+}

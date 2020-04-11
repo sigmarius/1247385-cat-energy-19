@@ -1,0 +1,7 @@
+.extra-item__character {
+  @include font(14px, 14px);
+}
+
+.extra-item__value {
+  @include clear-margin(0);
+}

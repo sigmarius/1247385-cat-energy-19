@@ -7,7 +7,8 @@
 }
 
 .product-type__item {
-  margin-bottom: 20px;
+  @include clear-margin(20px);
+
   padding: 39px 20px 0 20px;
   background-color: $bg-grey;
 }
