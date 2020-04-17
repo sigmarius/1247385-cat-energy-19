@@ -10,19 +10,21 @@
         <a class="header__logo" href="#">
             <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип проекта Кэт энерджи">
         </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-                <ul class="site-menu main-nav__menu">
-                    <li class="site-menu__item site-menu__item--active">
-                        <a class="site-menu__link" href="#">Главная</a>
-                    </li>
-                    <li class="site-menu__item">
-                        <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
-                    </li>
-                    <li class="site-menu__item">
-                        <a class="site-menu__link" href="form.html">Подбор программы</a>
-                    </li>
-                </ul>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__menu">
+                <li class="main-nav__item main-nav__item--active">
+                    <a class="main-nav__link" href="#">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="form.html">Подбор программы</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -119,5 +121,6 @@
         </div>
     </footer>
 
+    <script src="js/mobile-nav.js"></script>
 </body>
 </html>
