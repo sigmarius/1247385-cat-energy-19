@@ -1,11 +1,17 @@
 .intro {
+  position: relative;
   margin: 0;
-  padding: 30px 20px 0;
 
   text-align: center;
+}
+
+.intro__wrapper {
+  min-height: 305px;
+  margin-bottom: 135px;
+  padding: 30px 20px 0;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -26,7 +32,59 @@
   color: $white;
 }
 
+.intro__image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
 .intro__link {
-  @include clear-margin(22px);
-  width: 100%;
+  margin: 0 20px 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-height: 700px;
+
+    padding-left: 120px;
+  }
+
+  .intro__wrapper {
+    min-height: 180px;
+    width: 65%;
+
+    padding: 0;
+    margin-bottom: 48px;
+    text-align: left;
+
+    background: none;
+  }
+
+  .intro__title {
+    @include font(60px, 60px);
+
+    margin-bottom: 33px;
+    color: $head-grey;
+  }
+
+  .intro__slogan {
+    @include font(20px, 20px);
+
+    margin-bottom: 0;
+    color: $head-grey;
+  }
+
+  .intro__link {
+    @include font(20px, 20px);
+
+    width: 35%;
+    margin: 0;
+    padding: 17px 5px 15px;
+  }
+
+  .intro__image {
+    bottom: 0;
+    transform: translateX(-50%);
+  }
 }

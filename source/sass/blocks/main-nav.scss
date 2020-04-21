@@ -99,3 +99,42 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 60%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__item {
+    position: relative;
+  }
+
+  .main-nav__item--active::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $bg-green;
+  }
+
+  .main-nav__link {
+    @include font-header;
+    @include font(18px, 25px);
+
+    padding: 0;
+    color: $extra-grey;
+    border-top: none;
+  }
+}

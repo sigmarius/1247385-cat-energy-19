@@ -1,4 +1,5 @@
 .all-products {
+  position: relative;
   padding-top: 83px;
   text-align: center;
 }
@@ -6,13 +7,51 @@
 .all-products__title {
   @include font-header;
   @include font(16px, 20px);
+  @include clear-margin(11px);
+}
+
+.all-products__title::before {
+  @include psevdo(31px, 31px);
+  content: url("../img/icon-plus-mobile.svg");
+
+  top: 26px;
+  left: 50%;
+
+  transform: translateX(-50%);
 }
 
 .all-products__description {
   @include font(12px, 16px);
+  @include clear-margin(22px);
 }
 
 .all-products__link {
   @include clear-margin(25px);
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .all-products {
+    width: 324px;
+    padding-top: 165px;
+
+    border: 1px solid $line-grey;
+  }
+
+  .all-products__title {
+    @include font(20px, 20px);
+
+    &::before {
+      top: 80px;
+    }
+  }
+
+  .all-products__description {
+    @include font(16px, 16px);
+  }
+
+  .all-products__link {
+    @include font(16px, 20px);
+    margin-bottom: 40px;
+  }
 }
