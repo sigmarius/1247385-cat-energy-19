@@ -48,6 +48,8 @@
 
   .all-products__description {
     @include font(16px, 16px);
+
+    padding: 0 20px;
   }
 
   .all-products__link {

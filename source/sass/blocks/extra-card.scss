@@ -15,6 +15,6 @@
 
 .extra-card__link {
   @include font(16px, 20px);
-  @include clear-margin(17px);
+  @include clear-margin(0);
   text-align: center;
 }

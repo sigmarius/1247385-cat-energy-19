@@ -11,6 +11,7 @@
 
 .product-description__character {
   width: 50%;
+  margin: 0;
   text-align: left;
 }
 
@@ -26,7 +27,23 @@
     @include font(16px, 16px);
 
     width: 250px;
-    min-height: 80px;
     margin: 0;
+  }
+
+  .product-description__character {
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after {
+      @include psevdo(250px, 1px);
+
+      top: 23px;
+      left: 0;
+      background-color: $line-grey;
+    }
+  }
+
+  .product-description__value {
+    margin-bottom: 15px;
   }
 }
