@@ -88,3 +88,37 @@
     transform: translateX(-50%);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro {
+    min-height: 620px;
+    padding-left: 190px;
+
+    &::before {
+      @include psevdo(720px, 696px);
+      position: absolute;
+      right: 0;
+      top: -165px;
+      z-index: 0;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 110%;
+      background-position: right top;
+    }
+  }
+
+  .intro__wrapper {
+    width: 43%;
+    margin-bottom: 53px;
+  }
+
+  .intro__image {
+    bottom: 50%;
+    left: 55%;
+  }
+
+  .intro__link {
+    width: 245px;
+  }
+}

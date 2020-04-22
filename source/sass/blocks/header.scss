@@ -26,3 +26,9 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding: 53px 109px 0;
+  }
+}

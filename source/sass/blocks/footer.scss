@@ -34,3 +34,9 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 0 110px;
+  }
+}

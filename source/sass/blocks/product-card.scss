@@ -31,11 +31,8 @@
 
 @media (min-width: $tablet-width) {
   .product-card {
+    flex-direction: column;
     background-color: $contacts-grey;
-  }
-
-  .product-card:nth-child(odd) {
-    margin-right: 60px;
   }
 
   .product-card__wrapper {
@@ -60,5 +57,11 @@
 
   .product-card__link {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__link {
+    width: 169px;
   }
 }
