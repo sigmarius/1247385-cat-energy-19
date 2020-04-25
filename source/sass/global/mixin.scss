@@ -16,7 +16,14 @@
   list-style: none;
 }
 
-@mixin clear-margin($margin-bottom) {
+@mixin clear-margin ($margin-bottom) {
   margin: 0;
   margin-bottom: $margin-bottom;
+}
+
+@mixin psevdo ($width, $height) {
+  position: absolute;
+  content: "";
+  width: $width;
+  height: $height;
 }

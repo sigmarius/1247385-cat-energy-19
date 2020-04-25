@@ -1,0 +1,31 @@
+.social__list {
+  @include clear-intervals;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto 20px;
+  padding-top: 20px;
+}
+
+.social__item {
+  padding: 5px;
+}
+
+.social__icon {
+  fill: $logo-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin: 0;
+    width: auto;
+    padding: 0;
+  }
+
+  .social__item {
+    margin-right: 30px;
+  }
+}
