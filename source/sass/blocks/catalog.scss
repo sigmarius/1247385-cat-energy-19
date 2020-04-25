@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  padding: 0 20px;
+  padding: 0 20px 25px;
   border-bottom: 1px solid $line-grey;
 }
 
@@ -25,7 +25,7 @@
   .catalog__title {
     @include font(60px, 60px);
 
-    margin-bottom: 156px;
+    margin-bottom: 110px;
     padding: 0 30px;
 
     border-bottom: 0;
@@ -35,6 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 0 30px;
   }
 
@@ -43,9 +44,10 @@
 
     box-sizing: border-box;
     width: 324px;
-    min-height: 431px;
-    margin-bottom: 140px;
-    padding: 0 37px;
+    min-height: 512px;
+    margin-bottom: 90px;
+    padding: 0;
+    padding-bottom: 40px;
   }
 }
 
@@ -64,7 +66,6 @@
 
   .catalog__item {
     width: 245px;
-    padding: 0;
     align-items: center;
   }
 }

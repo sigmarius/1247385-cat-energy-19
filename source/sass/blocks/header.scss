@@ -4,6 +4,8 @@
 }
 
 .header__logo-image {
+  width: 191px;
+  height: 39px;
   padding: 11px 5px 15px 20px;
 }
 
@@ -23,12 +25,19 @@
   }
 
   .header__logo-image {
+    width: 174px;
+    height: 59px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    padding: 53px 109px 0;
+    padding: 53px 110px 0 40px;
+  }
+
+  .header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

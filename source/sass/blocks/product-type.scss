@@ -9,7 +9,7 @@
 .product-type__item {
   @include clear-margin(20px);
 
-  padding: 39px 20px 0 20px;
+  padding: 39px 20px 22px;
   background-color: $bg-grey;
 }
 
@@ -58,7 +58,8 @@
 
 .product-type__link {
   position: relative;
-  padding: 20px 0 22px 0;
+  padding: 0;
+  padding-top: 20px;
 
   border-top: 1px solid $line-grey;
 
@@ -79,7 +80,7 @@
   }
 
   .product-type__item {
-    padding: 80px 5px 0 55px;
+    padding: 80px 55px 62px;
   }
 
   .product-type__title {
@@ -91,7 +92,7 @@
     &::before {
       width: 200px;
       height: 200px;
-      left: 63%;
+      left: 400px;
       z-index: 1;
       top: 0;
     }
@@ -99,7 +100,7 @@
     &--slim::after {
       width: 141px;
       height: 194px;
-      left: 68%;
+      left: 435px;
       top: -10px;
       z-index: 2;
     }
@@ -107,7 +108,7 @@
     &--pro::after {
       width: 268px;
       height: 113px;
-      left: 55%;
+      left: 365px;
       top: 50px;
       z-index: 2;
     }
@@ -124,7 +125,6 @@
     @include font(20px, 20px);
 
     padding: 0;
-    padding-bottom: 62px;
 
     border-top: none;
 
@@ -138,7 +138,7 @@
 @media (min-width: $desktop-width) {
   .product-type {
     margin-bottom: 70px;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .product-type__list {
@@ -149,7 +149,7 @@
   .product-type__item {
     width: 570px;
     margin-bottom: 0;
-    padding: 81px 56px 0 52px;
+    padding: 81px 55px 52px;
 
     &:nth-child(odd) {
       margin-right: 80px;

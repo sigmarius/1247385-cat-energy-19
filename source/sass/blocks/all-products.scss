@@ -1,6 +1,10 @@
 .all-products {
   position: relative;
   padding-top: 83px;
+
+  flex-direction: column;
+  align-items: center;
+
   text-align: center;
 }
 
@@ -26,14 +30,17 @@
 }
 
 .all-products__link {
-  @include clear-margin(25px);
+  @include clear-margin(0);
+  width: 100%;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .all-products {
     width: 324px;
+    min-height: 431px;
     padding-top: 165px;
+    padding: 165px 37px 40px 38px;
 
     border: 1px solid $line-grey;
   }
@@ -48,13 +55,10 @@
 
   .all-products__description {
     @include font(16px, 16px);
-
-    padding: 0 20px;
   }
 
   .all-products__link {
     @include font(16px, 20px);
-    margin-bottom: 40px;
   }
 }
 

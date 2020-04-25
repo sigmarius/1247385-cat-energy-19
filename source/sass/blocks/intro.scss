@@ -10,6 +10,7 @@
   margin-bottom: 135px;
   padding: 30px 20px 0;
 
+  background-color: $bg-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,6 +37,9 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  width: 280px;
+  height: 270px;
+
   transform: translate(-50%, -15%);
 }
 
@@ -45,7 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 700px;
+    min-height: 800px;
 
     padding-left: 120px;
   }
@@ -85,6 +89,10 @@
 
   .intro__image {
     bottom: 0;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+
     transform: translateX(-50%);
   }
 }
@@ -92,15 +100,16 @@
 @media (min-width: $desktop-width) {
   .intro {
     min-height: 620px;
-    padding-left: 190px;
+    padding-left: 120px;
 
     &::before {
       @include psevdo(720px, 696px);
       position: absolute;
       right: 0;
-      top: -165px;
+      top: -185px;
       z-index: 0;
 
+      background-color: $bg-green;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: 110%;
@@ -114,8 +123,11 @@
   }
 
   .intro__image {
-    bottom: 50%;
+    bottom: 170px;
     left: 55%;
+    z-index: 0;
+    width: 552px;
+    height: 499px;
   }
 
   .intro__link {
