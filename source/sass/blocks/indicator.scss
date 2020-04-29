@@ -1,13 +1,95 @@
 .indicator {
+  position: relative;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 190px;
+  margin: 0 auto;
 }
 
 .indicator__button {
   @include font-header;
   @include font(16px, 20px);
 
-  margin: 35px 0 38px 0;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.indicator__stripe {
+  visibility: hidden;
+  width: 84px;
+
+  &::before {
+    @include psevdo(84px, 14px);
+
+    visibility: visible;
+    top: 5px;
+    left: 54px;
+
+    box-sizing: border-box;
+    background-color: $white;
+    border: solid 1px $line-grey;
+    border-radius: 90px;
+  }
+
+  &::after {
+    @include psevdo(35px, 6px);
+
+    visibility: visible;
+    top: 9px;
+    left: 62px;
+
+    box-sizing: border-box;
+    background-color: $bg-green;
+    border-radius: 90px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .indicator {
+    width: auto;
+    padding: 0 70px;
+  }
+
+  .indicator__button {
+    @include font(20px, 20px);
+    position: relative;
+
+    &::after {
+      @include psevdo(100%, 1px);
+
+      top: 26px;
+      left: 0;
+      background-color: $logo-grey;
+      opacity: 23%;
+    }
+  }
+
+  .indicator__stripe {
+    &::before {
+      left: 50%;
+      top: 10px;
+      width: 428px;
+      height: 6px;
+
+      background-color: $stripe-grey;
+      border: none;
+      transform: translate(-50%);
+    }
+
+    &::after {
+      left: 50%;
+      top: -5px;
+      width: 34px;
+      height: 34px;
+
+      border: 13px solid $white;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
