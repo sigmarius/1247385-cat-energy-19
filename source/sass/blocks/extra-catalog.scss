@@ -2,8 +2,9 @@
   position: relative;
 
   &::before {
-    @include psevdo(53px, 3px);
+    @include psevdo(auto, 3px);
     top: 45px;
+    left: 20px;
     right: 0;
     z-index: -1;
 
@@ -20,9 +21,13 @@
   @include font(24px, 24px);
   @include clear-margin(0);
 
-  padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px 30px 0;
+
   text-transform: none;
-  border-bottom: 1px solid $line-grey;
+
+  background-color: $white;
 }
 
 .extra-catalog__list {
@@ -45,13 +50,8 @@
   .extra-catalog__title {
     @include font(36px, 36px);
 
-    display: inline-block;
-    vertical-align: middle;
     margin-bottom: 75px;
     padding: 0 37px;
-
-    background-color: $white;
-    border-bottom: none;
   }
 }
 

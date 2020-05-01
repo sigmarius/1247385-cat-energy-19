@@ -1,7 +1,11 @@
 .extra-card {
   padding-top: 14px;
   padding-bottom: 17px;
-  border-bottom: 1px solid $line-grey;
+  border-top: 1px solid $line-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $line-grey;
+  }
 }
 
 .extra-card__title {
