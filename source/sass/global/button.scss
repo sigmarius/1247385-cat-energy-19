@@ -12,6 +12,15 @@
     @include font(14px, 18px);
     color: $white;
     background-color: $bg-green;
+
+    &:hover,
+    &:focus {
+      background-color: $button-green;
+    }
+
+    &:active {
+      color: $opacity-white;
+    }
   }
 
   &--grey {

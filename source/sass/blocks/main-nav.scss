@@ -12,6 +12,17 @@
   @include clear-intervals;
 }
 
+.main-nav__item {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__link {
   display: block;
   padding: 24px 5px;
