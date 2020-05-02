@@ -46,12 +46,14 @@
     width: 324px;
     min-height: 512px;
     margin-bottom: 90px;
+
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .catalog__title {

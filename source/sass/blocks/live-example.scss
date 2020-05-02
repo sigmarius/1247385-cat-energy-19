@@ -1,6 +1,10 @@
 .live-example {
-  padding: 33px 20px 0;
   background-color: $bg-grey;
+}
+
+.live-example__wrapper {
+  padding: 33px 34px 38px 20px;
+  box-sizing: border-box;
 }
 
 .live-example__title {
@@ -16,7 +20,9 @@
 }
 
 .live-example__list {
-  @include clear-margin(22px);
+  @include clear-margin(96px);
+
+  position: relative;
 }
 
 .live-example__price {
@@ -24,10 +30,99 @@
   @include font(14px, 20px);
   @include clear-margin(44px);
 
+  position: absolute;
+  top: 100px;
+  left: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  width: 187px;
+
   text-align: center;
+
+  transform: translateX(-50%);
+}
+
+.live-example__value {
+  margin: 0;
 }
 
 .live-example__image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example {
+    border-top: 1px solid $line-grey;
+    background-color: $bg-grey;
+    background-image: linear-gradient($white 619px, transparent 619px), linear-gradient(to right, $contacts-grey 50%, $became-grey 50%);
+  }
+
+  .live-example__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 51px 31px 65px;
+  }
+
+  .live-example__title {
+    @include font(60px, 60px);
+    margin-bottom: 60px;
+  }
+
+  .live-example__text {
+    @include font(16px, 24px);
+    margin-bottom: 56px;
+    padding-right: 30px;
+  }
+
+  .live-example__price {
+    @include font(20px, 20px);
+
+    top: 15px;
+    left: 600px;
+
+    flex-direction: column;
+    height: 47px;
+
+    text-align: right;
+  }
+
+  .live-example__image {
+    width: 690px;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example {
+    border-top: none;
+    background-color: $bg-grey;
+    background-image: linear-gradient($white 172px, transparent 172px), linear-gradient(to right, $contacts-grey 70%, $became-grey 70%);
+  }
+
+  .live-example__wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 42px 40px 68px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .live-example__wrapper-text {
+    width: 461px;
+  }
+
+  .live-example__title {
+    margin-bottom: 142px;
+  }
+
+  .live-example__price {
+    left: 170px;
+    top: 120px;
+    flex-direction: row;
+    width: 330px;
+
+    text-align: center;
+  }
 }

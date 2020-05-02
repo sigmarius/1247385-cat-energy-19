@@ -1,7 +1,13 @@
-.extra-item__character {
+.extra-item {
   @include font(14px, 14px);
 }
 
 .extra-item__value {
   @include clear-margin(0);
+}
+
+@media (min-width: $tablet-width) {
+  .extra-item {
+    @include font(16px, 20px);
+  }
 }
