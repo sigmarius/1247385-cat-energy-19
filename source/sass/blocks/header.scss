@@ -14,14 +14,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 68px;
+    margin-bottom: 55px;
     padding: 24px 31px 0 29px;
 
     border-bottom: none;
   }
 
   .header__logo {
-    width: 40%;
+    width: 174px;
+    height: auto;
   }
 
   .header__logo-image {
@@ -43,6 +44,10 @@
 @media (min-width: $desktop-width) {
   .header {
     padding: 53px 40px 0;
+  }
+
+  .header__logo {
+    width: 300px;
   }
 
   .header__logo-image {

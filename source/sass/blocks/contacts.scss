@@ -62,12 +62,18 @@
 
   .contacts__wrapper {
     position: absolute;
-    top: 95px;
-    left: 40px;
+    top: 105px;
+    left: 110px;
 
     width: 570px;
+    padding: 65px 90px 0 75px;
+    align-items: stretch;
 
     background-color: $white;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 
   .contacts__map {

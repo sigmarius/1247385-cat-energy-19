@@ -11,6 +11,17 @@
 
   text-decoration: none;
   color: $text-grey;
+  cursor: pointer;
+
+  &:hover .copyright__image,
+  &:focus .copyright__image,
+  &:active .copyright__image {
+    fill: $bg-green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .copyright__image {

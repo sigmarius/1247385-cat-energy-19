@@ -1,11 +1,11 @@
-.choice-programm {
-  padding: 30px 20px 0;
+.choice-programm__wrapper {
+  padding: 11px 20px 0;
 }
 
 .choice-programm__title {
   @include font-header;
   @include font(36px, 60px);
-  @include clear-margin(35px);
+  @include clear-margin(25px);
 
   text-transform: none;
 }
@@ -20,38 +20,35 @@
 }
 
 @media (min-width: $tablet-width) {
-  .choice-programm {
-    padding: 0 32px;
+  .choice-programm__wrapper {
+    padding: 0 30px;
   }
 
   .choice-programm__title {
     @include font(60px, 60px);
+    margin-bottom: 53px;
   }
 
   .choice-programm__slogan {
     @include font(20px, 30px);
 
     width: 50%;
-    margin-bottom: 69px;
-    padding-left: 38px;
-  }
-
-  .choice-programm__form {
-    padding: 0 28px 0 39px;
+    margin-bottom: 62px;
+    padding-left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .choice-programm {
-    padding: 0 40px;
+  .choice-programm__wrapper {
+    padding: 16px 40px 0;
+  }
+
+  .choice-programm__title {
+    margin-bottom: 55px;
   }
 
   .choice-programm__slogan {
     width: 30%;
-    padding: 0;
-  }
-
-  .choice-programm__form {
     padding: 0;
   }
 }

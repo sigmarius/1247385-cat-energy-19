@@ -17,6 +17,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &--after {
+    order: 2;
+  }
 }
 
 .indicator__stripe {
@@ -67,6 +71,24 @@
       background-color: $logo-grey;
       opacity: 23%;
     }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 40%;
+    }
+
+    &:active::after {
+      opacity: 0%;
+    }
+
+    &:hover ~ .indicator__stripe::after,
+    &:focus ~ .indicator__stripe::after {
+      box-shadow: 0 3px 5px 0 $middle-shadow;
+    }
+
+    &:active ~ .indicator__stripe::after {
+      box-shadow: 0 0 0 2px $bg-green, 0 4px 5px 0 $big-shadow;
+    }
   }
 
   .indicator__stripe {
@@ -89,7 +111,18 @@
 
       border: 13px solid $white;
       border-radius: 50%;
+      box-shadow: 0 2px 5px 0 $light-shadow;
       transform: translateX(-50%);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      box-shadow: 0 3px 5px 0 $middle-shadow;
+    }
+
+    &:active::after {
+      box-shadow: 0 0 0 2px $bg-green, 0 4px 5px 0 $big-shadow;
+      transition: all 0.1s ease;
     }
   }
 }

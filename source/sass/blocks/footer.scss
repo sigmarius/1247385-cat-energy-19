@@ -14,6 +14,15 @@
   text-align: center;
 
   border-bottom: 1px solid $line-grey;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .footer__social {

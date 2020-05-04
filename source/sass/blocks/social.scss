@@ -18,6 +18,20 @@
   fill: $logo-grey;
 }
 
+.social__link {
+  display: block;
+
+  &:hover .social__icon,
+  &:focus .social__icon,
+  &:active .social__icon {
+    fill: $bg-green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     margin: 0;
