@@ -1,6 +1,6 @@
 .all-products {
   position: relative;
-  padding-top: 83px;
+  padding-top: 79px;
 
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@
 .all-products__title {
   @include font-header;
   @include font(16px, 20px);
-  @include clear-margin(11px);
+  @include clear-margin(8px);
 }
 
 .all-products__title::before {
@@ -39,25 +39,33 @@
   .all-products {
     width: 324px;
     min-height: 431px;
-    padding: 165px 38px 40px;
+    padding: 165px 38px 35px;
 
     border: 1px solid $line-grey;
   }
 
   .all-products__title {
     @include font(20px, 20px);
+    width: 150px;
+    margin-bottom: 26px;
 
     &::before {
-      top: 80px;
+      top: 54px;
+      width: 61px;
+      height: 61px;
+
+      content: url("../img/icon-plus.svg");
     }
   }
 
   .all-products__description {
-    @include font(16px, 16px);
+    @include font(16px, 18px);
+    width: 170px;
   }
 
   .all-products__link {
     @include font(16px, 20px);
+    margin-top: auto;
   }
 }
 

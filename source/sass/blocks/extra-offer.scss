@@ -38,14 +38,15 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 76px;
-    padding: 65px 125px 65px 90px;
+    padding: 55px 125px 65px 90px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: contain;
   }
 
   .extra-offer__text {
-    width: 160px;
+    width: 161px;
+    padding-top: 14px;
     text-align: left;
   }
 }
@@ -56,6 +57,7 @@
     min-height: 289px;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 0;
     padding: 65px 43px 43px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");

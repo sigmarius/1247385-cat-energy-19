@@ -3,7 +3,7 @@
   @include font(36px, 60px);
   @include clear-margin(0);
 
-  padding: 21px 0 25px 22px;
+  padding: 14px 0 29px 22px;
   text-transform: none;
   border-bottom: 1px solid $line-grey;
 }
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  padding: 0 20px 25px;
+  padding: 0 20px 24px;
   border-bottom: 1px solid $line-grey;
 }
 
@@ -25,7 +25,7 @@
   .catalog__title {
     @include font(60px, 60px);
 
-    margin-bottom: 110px;
+    margin-bottom: 83px;
     padding: 0 30px;
 
     border-bottom: 0;
@@ -45,7 +45,7 @@
     box-sizing: border-box;
     width: 324px;
     min-height: 512px;
-    margin-bottom: 90px;
+    margin-bottom: 58px;
 
     border-bottom: none;
   }
@@ -53,7 +53,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 0 40px;
+    padding: 18px 40px 0;
   }
 
   .catalog__title {
@@ -66,6 +66,8 @@
 
   .catalog__item {
     width: 245px;
+    margin-bottom: 60px;
+
     align-items: center;
   }
 }

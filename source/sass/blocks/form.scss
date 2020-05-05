@@ -220,7 +220,7 @@
 
 .form__required {
   @include font(14px, 16px);
-  @include clear-margin(34px);
+  @include clear-margin(31px);
 
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -397,6 +397,10 @@
       display: flex;
       justify-content: space-between;
     }
+
+    &--send {
+      margin-bottom: 84px;
+    }
   }
 
   .form__fieldset {
@@ -412,6 +416,10 @@
       margin-left: 80px;
       padding: 37px 15px 0 28px;
       box-sizing: border-box;
+    }
+
+    &--line::after {
+      top: 53px;
     }
   }
 
