@@ -7,16 +7,16 @@
 }
 
 .product-type__item {
-  @include clear-margin(20px);
+  @include clear-margin(12px);
 
-  padding: 39px 20px 22px;
+  padding: 30px 20px 22px;
   background-color: $bg-grey;
 }
 
 .product-type__title {
   @include font-header;
   @include font(24px, 37px);
-  @include clear-margin(35px);
+  @include clear-margin(30px);
 
   position: relative;
   padding-left: 70px;
@@ -24,8 +24,8 @@
   &::before {
     @include psevdo(50px, 50px);
 
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: 2px;
 
     background-color: $bg-green;
     border-radius: 50%;
@@ -34,7 +34,7 @@
   &--slim::after {
     @include psevdo(35px, 50px);
 
-    top: -5px;
+    top: -7px;
     left: 9px;
 
     background-image: url("../img/icon-cat-slim.svg");
@@ -44,8 +44,8 @@
   &--pro::after {
     @include psevdo(67px, 28px);
 
-    top: 10px;
-    left: -10px;
+    top: 6px;
+    left: -7px;
 
     background-image: url("../img/icon-cat-pro.svg");
     background-size: cover;
@@ -59,15 +59,15 @@
 .product-type__link {
   position: relative;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 17px;
 
   border-top: 1px solid $line-grey;
 
   &::after {
     @include psevdo(25px, 12px);
 
-    top: 22px;
-    left: 100px;
+    top: 19px;
+    left: 95px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-size: cover;
@@ -91,7 +91,8 @@
   }
 
   .product-type__item {
-    padding: 80px 55px 62px;
+    margin-bottom: 29px;
+    padding: 76px 53px 43px;
   }
 
   .product-type__title {
@@ -103,24 +104,24 @@
     &::before {
       width: 200px;
       height: 200px;
-      left: 400px;
+      left: 393px;
       z-index: 1;
-      top: 0;
+      top: 15px;
     }
 
     &--slim::after {
       width: 141px;
       height: 194px;
-      left: 435px;
-      top: -10px;
+      left: 423px;
+      top: 4px;
       z-index: 2;
     }
 
     &--pro::after {
       width: 268px;
       height: 113px;
-      left: 365px;
-      top: 50px;
+      left: 358px;
+      top: 58px;
       z-index: 2;
     }
   }
@@ -128,8 +129,12 @@
   .product-type__description {
     @include font(16px, 24px);
 
-    width: 58%;
-    margin-bottom: 62px;
+    width: 62%;
+    margin-bottom: 55px;
+
+    &--pro {
+      width: 57%;
+    }
   }
 
   .product-type__link {
@@ -142,6 +147,10 @@
     &::after {
       top: 5px;
       left: 130px;
+    }
+
+    &--pro::after {
+      left: 124px;
     }
   }
 }
@@ -160,7 +169,7 @@
   .product-type__item {
     width: 570px;
     margin-bottom: 0;
-    padding: 81px 55px 52px;
+    padding: 75px 54px 45px;
 
     &:nth-child(odd) {
       margin-right: 80px;
@@ -169,11 +178,11 @@
 
   .product-type__title {
     margin-bottom: 75px;
-    padding-left: 164px;
+    padding-left: 159px;
 
     &::before {
-      left: 0;
-      top: -30px;
+      left: -3px;
+      top: -29px;
       width: 100px;
       height: 100px;
     }
@@ -181,19 +190,20 @@
     &--slim::after {
       width: 71px;
       height: 97px;
-      left: 18px;
-      top: -40px;
+      left: 10px;
+      top: -35px;
     }
 
     &--pro::after {
       width: 134px;
       height: 57px;
-      left: -18px;
-      top: -10px;
+      left: -22px;
+      top: -8px;
     }
   }
 
   .product-type__description {
     width: 100%;
+    margin-bottom: 29px;
   }
 }

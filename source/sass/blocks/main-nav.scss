@@ -158,6 +158,7 @@
 
   .main-nav__menu--white {
     .main-nav__item--active::after {
+      top: 33px;
       background-color: $white;
     }
 

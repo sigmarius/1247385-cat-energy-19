@@ -6,9 +6,9 @@
 }
 
 .intro__wrapper {
-  min-height: 305px;
+  min-height: 278px;
   margin-bottom: 135px;
-  padding: 30px 20px 0;
+  padding: 27px 20px 0;
 
   background-color: $bg-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -19,7 +19,7 @@
 .intro__title {
   @include font-header;
   @include font(36px, 36px);
-  @include clear-margin(20px);
+  @include clear-margin(25px);
 
   color: $white;
   text-transform: none;
@@ -35,7 +35,7 @@
 
 .intro__image {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 50%;
   width: 280px;
   height: 270px;
@@ -50,8 +50,8 @@
 @media (min-width: $tablet-width) {
   .intro {
     min-height: 800px;
-
-    padding-left: 120px;
+    margin-bottom: 10px;
+    padding-left: 117px;
   }
 
   .intro__wrapper {
@@ -68,7 +68,7 @@
   .intro__title {
     @include font(60px, 60px);
 
-    margin-bottom: 33px;
+    margin-bottom: 41px;
     color: $head-grey;
   }
 
@@ -82,13 +82,13 @@
   .intro__link {
     @include font(20px, 20px);
 
-    width: 35%;
+    width: 245px;
     margin: 0;
     padding: 17px 5px 15px;
   }
 
   .intro__image {
-    bottom: 0;
+    bottom: -10px;
     z-index: -1;
     width: 709px;
     height: 609px;
@@ -99,22 +99,9 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    min-height: 620px;
+    min-height: 545px;
     padding-left: 120px;
-
-    &::before {
-      @include psevdo(720px, 696px);
-      position: absolute;
-      right: 0;
-      top: -185px;
-      z-index: 0;
-
-      background-color: $bg-green;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 110%;
-      background-position: right top;
-    }
+    padding-top: 52px;
   }
 
   .intro__wrapper {
@@ -123,8 +110,8 @@
   }
 
   .intro__image {
-    bottom: 170px;
-    left: 55%;
+    bottom: 125px;
+    left: 59%;
     z-index: 0;
     width: 552px;
     height: 499px;

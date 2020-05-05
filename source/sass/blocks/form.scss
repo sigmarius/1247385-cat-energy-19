@@ -122,6 +122,10 @@
   &:active {
     outline: 2px solid $text-grey;
   }
+
+  &:invalid {
+    outline: 2px solid $line-error;
+  }
 }
 
 .form__list {

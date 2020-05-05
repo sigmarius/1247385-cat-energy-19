@@ -3,7 +3,7 @@
 
   display: flex;
   justify-content: space-between;
-  width: 190px;
+  width: 198px;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@
 
     visibility: visible;
     top: 5px;
-    left: 54px;
+    left: 58px;
 
     box-sizing: border-box;
     background-color: $white;
@@ -45,7 +45,7 @@
 
     visibility: visible;
     top: 9px;
-    left: 62px;
+    left: 65px;
 
     box-sizing: border-box;
     background-color: $bg-green;
@@ -56,7 +56,7 @@
 @media (min-width: $tablet-width) {
   .indicator {
     width: auto;
-    padding: 0 70px;
+    padding: 0 68px;
   }
 
   .indicator__button {
@@ -124,5 +124,16 @@
       box-shadow: 0 0 0 2px $bg-green, 0 4px 5px 0 $big-shadow;
       transition: all 0.1s ease;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .indicator {
+    padding: 0 40px 0 80px;
+  }
+
+  .indicator__stripe::before,
+  .indicator__stripe::after {
+    left: 53%;
   }
 }
