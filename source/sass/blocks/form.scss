@@ -123,9 +123,10 @@
     outline: 2px solid $text-grey;
   }
 
+  /*
   &:invalid {
     outline: 2px solid $line-error;
-  }
+  }*/
 }
 
 .form__list {
@@ -408,13 +409,13 @@
 
     &--personal {
       width: 50%;
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
 
     &--radio {
       width: 50%;
       margin-left: 80px;
-      padding: 37px 15px 0 28px;
+      padding: 34px 15px 34px 28px;
       box-sizing: border-box;
     }
 
