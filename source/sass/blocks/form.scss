@@ -123,10 +123,9 @@
     outline: 2px solid $text-grey;
   }
 
-  /*
-  &:invalid {
+  &:not(:placeholder-shown):invalid {
     outline: 2px solid $line-error;
-  }*/
+  }
 }
 
 .form__list {
@@ -148,7 +147,8 @@
 .form__toggle {
   position: relative;
 
-  display: block;
+  display: inline;
+  padding: 0;
 
   cursor: pointer;
   user-select: none;
@@ -165,19 +165,25 @@
   &--radio::before {
     border-radius: 50%;
   }
+}
 
-  &:focus {
-    outline: none;
-  }
+.form__input-radio:hover + .form__toggle--radio,
+.form__input-radio:focus + .form__toggle--radio,
+.form__input-checkbox:hover + .form__toggle--checkbox,
+.form__input-checkbox:focus + .form__toggle--checkbox {
+  outline: 1px solid $bg-green;
+}
 
-  &:hover::before,
-  &:focus::before {
-    border-color: $toggle-grey;
-  }
+.form__input-radio:hover + .form__toggle--radio::before,
+.form__input-radio:focus + .form__toggle--radio::before,
+.form__input-checkbox:hover + .form__toggle--checkbox::before,
+.form__input-checkbox:focus + .form__toggle--checkbox::before {
+  border-color: $toggle-grey;
+}
 
-  &:active {
-    opacity: 30%;
-  }
+.form__input-radio:active + .form__toggle--radio,
+.form__input-checkbox:active + .form__toggle--checkbox {
+  opacity: 30%;
 }
 
 .form__input-radio:checked + .form__toggle--radio::after {

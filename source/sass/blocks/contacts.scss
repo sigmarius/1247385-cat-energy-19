@@ -1,11 +1,12 @@
-.contacts {
+.wrapper {
   position: relative;
 }
 
-.contacts__wrapper {
+.contacts__wrapper-text {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
 
   box-sizing: border-box;
   display: flex;
@@ -32,14 +33,45 @@
   font-style: normal;
 }
 
+.contacts__wrapper-map {
+  position: relative;
+  min-height: 400px;
+  padding-top: 76px;
+  overflow: hidden;
+
+  &::before {
+    @include psevdo(55px, 53px);
+    top: 54%;
+    left: 50%;
+    z-index: 2;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateX(-50%);
+  }
+}
+
+.contacts iframe {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+
+  height: 100%;
+
+  border: none;
+}
+
 .contacts__map {
+  z-index: 1;
+
   display: block;
   width: 100%;
-  padding-top: 76px;
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__wrapper {
+  .contacts__wrapper-text {
     position: static;
     min-height: 200px;
     padding: 0 71px;
@@ -67,22 +99,29 @@
     margin-bottom: 20px;
   }
 
-  .contacts__map {
+  .contacts__wrapper-map {
     height: 394px;
     padding-top: 0;
+
+    &::before {
+      top: 50%;
+      width: 113px;
+      height: 106px;
+
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
     min-height: 400px;
   }
 
-  .contacts__wrapper {
+  .contacts__wrapper-text {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 40px;
 
     width: 570px;
     padding: 65px 90px 0 75px;
@@ -99,8 +138,14 @@
     text-align: left;
   }
 
-  .contacts__map {
-    width: 1440px;
-    height: 400px;
+  .contacts__wrapper-map {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+
+    &::before {
+      top: 51.5%;
+      left: 73.5%;
+    }
   }
 }

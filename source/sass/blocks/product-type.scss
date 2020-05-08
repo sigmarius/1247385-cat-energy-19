@@ -10,6 +10,8 @@
   @include clear-margin(12px);
 
   padding: 30px 20px 22px;
+  box-sizing: border-box;
+
   background-color: $bg-grey;
 }
 
@@ -157,18 +159,19 @@
 
 @media (min-width: $desktop-width) {
   .product-type {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     padding: 0 40px;
   }
 
   .product-type__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .product-type__item {
     width: 570px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding: 75px 54px 45px;
 
     &:nth-child(odd) {

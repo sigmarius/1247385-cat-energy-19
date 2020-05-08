@@ -131,7 +131,7 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     padding: 0 40px;
   }
 
@@ -142,19 +142,18 @@
   }
 
   .features__list {
-    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
   .features__item {
-    width: 25%;
-    margin-bottom: 0;
+    width: 245px;
+    margin-bottom: 10px;
 
-    &:not(:last-child) {
+    &:not(:nth-child(4n)) {
       margin-right: 80px;
     }
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
 

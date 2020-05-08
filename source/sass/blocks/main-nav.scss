@@ -124,10 +124,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 18px;
   }
 
   .main-nav__item {
     position: relative;
+    margin-bottom: 20px;
 
     &--active::after {
       content: "";
