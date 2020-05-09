@@ -26,14 +26,14 @@
 
   .choice-programm__title {
     @include font(60px, 60px);
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 
   .choice-programm__slogan {
     @include font(20px, 30px);
 
     width: 50%;
-    margin-bottom: 62px;
+    margin-bottom: 65px;
     padding-left: 40px;
   }
 }
@@ -41,10 +41,6 @@
 @media (min-width: $desktop-width) {
   .choice-programm__wrapper {
     padding: 16px 40px 0;
-  }
-
-  .choice-programm__title {
-    margin-bottom: 55px;
   }
 
   .choice-programm__slogan {
