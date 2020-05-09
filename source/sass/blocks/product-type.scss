@@ -75,6 +75,11 @@
     background-size: cover;
   }
 
+  &:hover,
+  &:focus {
+    background-color: $bg-grey;
+  }
+
   &:hover::after,
   &:focus::after,
   &:active::after {

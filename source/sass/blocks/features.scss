@@ -70,6 +70,8 @@
     flex-wrap: wrap;
     align-items: flex-end;
     padding-left: 0;
+
+    counter-reset: list;
   }
 
   .features__item {
@@ -86,8 +88,7 @@
       margin-right: 137px;
     }
 
-    &--icon1,
-    &--icon2 {
+    &:not(:last-child):not(:nth-last-child(2)) {
       margin-bottom: 54px;
     }
 
@@ -109,22 +110,9 @@
       z-index: -1;
 
       color: $bg-grey;
-    }
 
-    &--icon1::after {
-      content: "1";
-    }
-
-    &--icon2::after {
-      content: "2";
-    }
-
-    &--icon3::after {
-      content: "3";
-    }
-
-    &--icon4::after {
-      content: "4";
+      content: counter(list);
+      counter-increment: list;
     }
   }
 }
