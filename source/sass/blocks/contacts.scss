@@ -1,4 +1,19 @@
-.contacts {
+.wrapper {
+  position: relative;
+}
+
+.contacts__wrapper-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 26px;
+
   background-color: $white;
 
   &--grey {
@@ -6,18 +21,11 @@
   }
 }
 
-.contacts__wrapper {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 20px 26px;
-}
-
 .contacts__title {
   @include font-header;
   @include font(16px, 20px);
-  @include clear-margin(0);
+  margin: 0;
+  margin-right: 18px;
 }
 
 .contacts__address {
@@ -25,13 +33,46 @@
   font-style: normal;
 }
 
+.contacts__wrapper-map {
+  position: relative;
+  min-height: 400px;
+  padding-top: 76px;
+  overflow: hidden;
+
+  &::before {
+    @include psevdo(55px, 53px);
+    top: 54%;
+    left: 50%;
+    z-index: 2;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateX(-50%);
+  }
+}
+
+.contacts iframe {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+
+  height: 100%;
+
+  border: none;
+}
+
 .contacts__map {
+  z-index: 1;
+
   display: block;
   width: 100%;
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__wrapper {
+  .contacts__wrapper-text {
+    position: static;
     min-height: 200px;
     padding: 0 71px;
   }
@@ -39,6 +80,7 @@
   .contacts__title {
     @include font(20px, 25px);
     width: 154px;
+    padding-top: 5px;
   }
 
   .contacts__address {
@@ -52,26 +94,58 @@
 
     text-align: right;
   }
+
+  .contacts__address-details {
+    margin-bottom: 20px;
+  }
+
+  .contacts__wrapper-map {
+    height: 394px;
+    padding-top: 0;
+
+    &::before {
+      top: 50%;
+      width: 113px;
+      height: 106px;
+
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
     min-height: 400px;
   }
 
-  .contacts__wrapper {
+  .contacts__wrapper-text {
     position: absolute;
     top: 95px;
     left: 40px;
 
     width: 570px;
+    padding: 65px 90px 0 75px;
+    align-items: stretch;
 
     background-color: $white;
   }
 
-  .contacts__map {
-    width: 1440px;
-    height: 400px;
+  .contacts__title {
+    padding-top: 0;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+
+  .contacts__wrapper-map {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+
+    &::before {
+      top: 51.5%;
+      left: 73.5%;
+    }
   }
 }

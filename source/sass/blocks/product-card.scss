@@ -19,12 +19,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
+  padding: 22px 0 26px;
 }
 
 .product-card__link {
   @include font(16px, 20px);
   @include clear-margin(0);
+  margin-top: -4px;
 
   width: 100%;
 
@@ -48,6 +49,7 @@
     width: auto;
     margin: 0;
     margin-bottom: 33px;
+    padding: 33px 0 0;
   }
 
   .product-card__image {
@@ -66,10 +68,15 @@
 
   .product-card__link {
     width: 249px;
+    margin-top: -6px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .product-card__title {
+    width: 85%;
+  }
+
   .product-card__image {
     width: 245px;
     height: auto;

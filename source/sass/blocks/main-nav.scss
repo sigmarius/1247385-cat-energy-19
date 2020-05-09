@@ -113,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 60%;
+    width: 62%;
   }
 
   .main-nav__toggle {
@@ -124,15 +124,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 18px;
   }
 
   .main-nav__item {
     position: relative;
+    margin-bottom: 20px;
 
     &--active::after {
       content: "";
       position: absolute;
-      top: 30px;
+      top: 31px;
       left: 0;
       height: 2px;
       width: 100%;
@@ -153,7 +155,11 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     z-index: 1;
-    width: 45%;
+    width: 39%;
+  }
+
+  .main-nav__item--active::after {
+    top: 33px;
   }
 
   .main-nav__menu--white {

@@ -10,4 +10,15 @@
   .extra-item {
     @include font(16px, 20px);
   }
+
+  .extra-item__value {
+    margin-left: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-item__value {
+    margin: 0;
+    margin-right: 12px;
+  }
 }

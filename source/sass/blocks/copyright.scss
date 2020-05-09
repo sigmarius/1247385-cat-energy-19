@@ -1,18 +1,40 @@
 .copyright {
-  padding: 31px 0;
+  padding: 20px 0;
 }
 
 .copyright__link {
   @include font(16px, 16px);
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   text-decoration: none;
   color: $text-grey;
+  cursor: pointer;
+
+  &:hover .copyright__image,
+  &:focus .copyright__image,
+  &:active .copyright__image {
+    fill: $bg-green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .copyright__image {
   fill: $logo-grey;
+  margin-right: -8px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-width: 164px;
+  }
+
+  .copyright__image {
+    margin-top: 4px;
+  }
 }

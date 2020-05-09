@@ -29,5 +29,14 @@
     color: $head-grey;
     background-color: $bg-grey;
     border: none;
+
+    &:hover,
+    &:focus {
+      background-color: $button-grey;
+    }
+
+    &:active {
+      color: $opacity-text;
+    }
   }
 }

@@ -1,11 +1,11 @@
 .features {
-  padding: 0 20px;
+  padding: 0 20px 40px;
 }
 
 .features__title {
   @include font-header;
   @include font(36px, 60px);
-  @include clear-margin(35px);
+  @include clear-margin(30px);
 
   text-transform: none;
 }
@@ -23,12 +23,13 @@
   min-height: 60px;
 
   &--icon4 {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   &::before {
     @include psevdo(60px, 60px);
 
+    top: -3px;
     left: -80px;
 
     background-color: $bg-green;
@@ -55,7 +56,13 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    padding: 0 30px;
+    margin-bottom: 23px;
+    padding: 15px 30px 0;
+  }
+
+  .features__title {
+    @include font(60px, 60px);
+    margin-bottom: 72px;
   }
 
   .features__list {
@@ -72,16 +79,24 @@
     min-height: 230px;
     display: flex;
     align-items: center;
-    margin-right: 15%;
-    padding-top: 30px;
+    margin-bottom: 0;
+    padding-top: 33px;
 
-    &--icon4 {
-      margin-bottom: 20px;
+    &:nth-child(odd) {
+      margin-right: 137px;
+    }
+
+    &--icon1,
+    &--icon2 {
+      margin-bottom: 54px;
     }
 
     &::before {
       left: 0;
       top: 0;
+
+      width: 80px;
+      height: 80px;
     }
 
     &::after {
@@ -89,8 +104,8 @@
       @include font-header;
       @include font(281px, 281px);
 
-      top: -40px;
-      right: -20px;
+      top: -39px;
+      right: 11px;
       z-index: -1;
 
       color: $bg-grey;
@@ -116,28 +131,29 @@
 
 @media (min-width: $desktop-width) {
   .features {
+    margin-bottom: 0;
     padding: 0 40px;
   }
 
   .features__title {
     @include font(60px, 60px);
 
-    margin-bottom: 63px;
+    margin-bottom: 73px;
   }
 
   .features__list {
-    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
   .features__item {
-    width: 25%;
+    width: 245px;
+    margin-bottom: 10px;
 
-    &:not(:last-child) {
+    &:not(:nth-child(4n)) {
       margin-right: 80px;
     }
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
 
