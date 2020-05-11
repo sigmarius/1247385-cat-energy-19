@@ -1,3 +1,11 @@
+.contacts {
+  background-color: $white;
+
+  &--grey {
+    background-color: $contacts-grey;
+  }
+}
+
 .wrapper {
   position: relative;
 }
@@ -13,12 +21,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 20px 26px;
-
-  background-color: $white;
-
-  &--grey {
-    background-color: $contacts-grey;
-  }
 }
 
 .contacts__title {
