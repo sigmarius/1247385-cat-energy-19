@@ -23,9 +23,9 @@
   }
 }
 
-.indicator__stripe {
-  visibility: hidden;
+.indicator__label {
   width: 84px;
+  cursor: pointer;
 
   &::before {
     @include psevdo(84px, 14px);
@@ -82,7 +82,7 @@
     }
   }
 
-  .indicator__stripe {
+  .indicator__label {
     &::before {
       left: 50%;
       top: 10px;
@@ -120,11 +120,20 @@
 
 @media (min-width: $desktop-width) {
   .indicator {
+    position: relative;
+    top: 501px;
+    left: 40px;
+
     padding: 0 40px 0 80px;
   }
 
-  .indicator__stripe::before,
-  .indicator__stripe::after {
-    left: 53%;
+  .indicator__label {
+    width: 34px;
+    height: 23px;
+
+    &::before,
+    &::after {
+      left: 53%;
+    }
   }
 }

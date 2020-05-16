@@ -98,11 +98,13 @@
     @include font(16px, 24px);
 
     width: 35%;
-    min-height: 230px;
+    min-height: 263px;
     display: flex;
     align-items: center;
     margin-bottom: 0;
     padding-top: 33px;
+    box-sizing: border-box;
+    max-width: 100%;
 
     &:nth-child(odd) {
       margin-right: 137px;
@@ -150,12 +152,16 @@
   }
 
   .features__list {
+    min-height: 230px;
     justify-content: space-between;
   }
 
   .features__item {
     width: 245px;
+    min-height: 263px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
 
     &:last-child {
       margin-bottom: 10px;

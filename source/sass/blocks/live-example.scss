@@ -111,7 +111,7 @@
   .live-example {
     border-top: none;
     background-color: $bg-grey;
-    background-image: linear-gradient($white 172px, transparent 172px), linear-gradient(to right, $contacts-grey 72.5%, $became-grey 72.5%);
+    background-image: linear-gradient($white 172px, transparent 172px), linear-gradient(to right, $contacts-grey 50%, $became-grey 50%);
   }
 
   .live-example__wrapper {
@@ -122,6 +122,9 @@
     padding: 37px 40px 68px;
     display: flex;
     justify-content: space-between;
+
+    background-color: $bg-grey;
+    background-image: linear-gradient($white 172px, transparent 172px), linear-gradient(to right, $contacts-grey 974px, $became-grey 974px);
   }
 
   .live-example__wrapper-text {
@@ -146,14 +149,17 @@
   }
 
   .live-example__wrapper-visual {
-    position: absolute;
-    top: -18px;
-    right: 0;
+    position: relative;
 
+    min-width: 690px;
     padding-bottom: 0;
   }
 
   .live-example__image {
+    position: absolute;
+    top: -54px;
+    right: -40px;
+
     margin-bottom: 38px;
   }
 }
