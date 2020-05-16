@@ -16,6 +16,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 3;
 
   box-sizing: border-box;
@@ -81,11 +82,18 @@
     position: static;
     min-height: 200px;
     padding: 0 71px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+      padding-top: 60px;
+    }
   }
 
   .contacts__title {
     @include font(20px, 25px);
     width: 154px;
+    max-width: 100%;
+    box-sizing: border-box;
     padding-top: 5px;
   }
 
@@ -93,6 +101,8 @@
     @include font(16px, 20px);
 
     width: 155px;
+    max-width: 100%;
+    box-sizing: border-box;
     height: 76px;
     display: flex;
     flex-direction: column;

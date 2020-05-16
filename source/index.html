@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       document.createElement( "picture" );
@@ -27,7 +28,7 @@
             <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип проекта Кэт энерджи">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -128,7 +129,8 @@
               <div class="indicator live-example__indicator">
                   <button class="indicator__button indicator__button--before" type="button">Было</button>
                   <button class="indicator__button indicator__button--after">Стало</button>
-                  <input class="indicator__stripe" type="range" id="indicator-value" name="indicator-value" aria-label="Индикатор прогресса">
+                  <label class="indicator__label" for="indicator-value" aria-label="Полоса индикатора"></label>
+                  <input class="indicator__stripe visually-hidden" type="range" id="indicator-value" name="indicator-value" aria-label="Индикатор прогресса">
 
               </div>
             </div>

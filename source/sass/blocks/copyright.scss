@@ -32,6 +32,8 @@
 @media (min-width: $tablet-width) {
   .copyright {
     min-width: 164px;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
   .copyright__image {
